@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS_files/reset.css">
+    <link rel="stylesheet" href="CSS_files/range.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Easy-Sorting</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Sorting Analyser</a>
+            <button class="navbar-toggler border border-success " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-success "></span>
+            </button>
+            <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2  mb-lg-0">
+                    <li class="nav-item">
+                        <button type="button" class="btn text-success reset "  >Reset Array</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn selection-sort text-white">Selection Sort</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn b bubble-sort text-white">Bubble Sort</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn  insertion-sort text-white">Insertion Sort</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn  quick-sort text-white">Quick Sort</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn  merge-sort text-white">Merge Sort</button>
+                    </li>
+                </ul>
+                <div id="size" class=" p-2  text-success ">
+                    <span class="me-3">Size</span>
+                    <input type="range" class="bg-dark align-middle" name="arr_size" value="30" id="arr_size" min="10" max="180"
+                        step="1">
+                </div>
+                <div id="speed" class=" p-2  text-success">
+                    <span class=" me-3">Speed</span>
+                    <input type="range" class="bg-dark align-middle " name="srt_speed" id="srt_speed" min="0" max="500"
+                        step="20">
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body class="px-3 bg-dark text-white">
+    <div id="bars" class="d-flex bar-container my-5 mx-3 align-items-end justify-content-center "></div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="/JS_files/index.js"></script>
+        <script src="/JS_files/bubble.js"></script>
+        <script src="/JS_files/quick.js"></script>
+        <script src="/JS_files/merge.js"></script>
+        <script src="/JS_files/selection.js"></script>
+        <script src="/JS_files/insertion.js"></script>
+</body>
+
+</html>
